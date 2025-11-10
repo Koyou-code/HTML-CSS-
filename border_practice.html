@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="box" content="width=device-width, initial-scale=1.0">
+
+    <title>boxの練習</title>
+    <style>
+        body {
+            font-family: "游ゴシック体", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+                "メイリオ", Meiryo, sans-serif;
+            margin: 50px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 10px;
+        }
+
+        p {
+            font-size: 25px;
+            font-weight: bold;
+            line-height: 1.5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main_1 {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .border_double,
+        .border_groove,
+        .border_ridge,
+        .box,
+        .border_dashed,
+        .border_soild,
+        .border_inset,
+        .border_outset,
+        .border_dotted,
+        .border_set_1,
+        .border_set_2,
+        .border_set_3 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            background-color: antiquewhite;
+            padding: 20px;
+            margin: 0px;
+        }
+
+        .box {
+            padding: 25px;
+        }
+
+        .border_dashed {
+            border: 5px dashed cadetblue;
+        }
+
+        .border_soild {
+            border: 5px solid cadetblue;
+        }
+
+        .border_double {
+            border: 5px double cadetblue;
+        }
+
+        .border_groove {
+            border: 5px groove cadetblue;
+        }
+
+        .border_ridge {
+            border: 5px ridge cadetblue;
+        }
+
+        .border_dotted {
+            border: 5px dotted cadetblue;
+        }
+
+        .border_inset {
+            border: 5px inset cadetblue;
+        }
+
+        .border_outset {
+            border: 5px outset cadetblue;
+        }
+
+        .border_set_1 {
+            border-top: 5px dashed cadetblue;
+            border-right: 5px solid cadetblue;
+            border-bottom: 5px dashed cadetblue;
+            border-left: 5px solid cadetblue;
+        }
+         .border_set_2 {
+            border-top: 5px dashed cadetblue;
+            border-right: 5px dotted cadetblue;
+            border-bottom: 5px double cadetblue;
+            border-left: 5px dotted cadetblue;
+        }
+          .border_set_3 {
+            border-top: 5px solid cadetblue;
+            border-right: 5px dotted cadetblue;
+            border-bottom: 5px double cadetblue;
+            border-left: 5px dashed cadetblue;
+        }
+        .border_set_1 p,
+        .border_set_3 p,
+        .border_set_2 p {
+            font-size: 15px;
+
+            line-height:3;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <h1>Border Practice | ボーダーの練習</h1>
+        <div class="main_1">
+            <div class="box">
+                <p>border: なし</p>
+            </div>
+            <div class="border_soild">
+                <p>border:soild</p>
+            </div>
+
+            <div class="border_dashed">
+                <p> border:dashed</p>
+            </div>
+        </div>
+        <div class="main_1">
+            <div class="border_double">
+                <p>border:double</p>
+            </div>
+            <div class="border_groove">
+                <p>border:groove</p>
+            </div>
+            <div class="border_ridge">
+                <p> border:ridge</p>
+            </div>
+        </div>
+        <div class="main_1">
+            <div class="border_dotted">
+                <p>border:dotted</p>
+            </div>
+            <div class="border_inset">
+                <p>border:inset</p>
+            </div>
+            <div class="border_outset">
+                <p> border:outset</p>
+            </div>
+        </div>
+        <div class="main_1">
+            <div class="border_set_1">
+                <p>border-top: dashed<br>
+                    border-right: solid<br>
+                    border-bottom: dashed<br>
+                    border-left: solid</p>
+            </div>
+            <div class="border_set_2">
+                <p>
+                    border-top: dashed<br>
+                    border-right: dotted<br>
+                    border-bottom: double<br>
+                    border-left: dotted
+                </p>
+            </div>
+            <div class="border_set_3">
+                <p> border-top: soild<br>
+                    border-right: dotted<br>
+                    border-bottom: double<br>
+                    border-left: dashed
+                </p>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
