@@ -3,11 +3,8 @@
 このリポジトリは、HTMLとCSSの学習用に作成したコードをまとめたものです。  
 主にWebデザインやフロントエンド開発の基礎を練習しています。
 
-
-
-## 🧠 学習ポイント
-- FlexboxやGridのレイアウト練習
-- cssの基本
-- レスポンシブデザインの実装
+###  Border Practice
+HTML の border プロパティを練習するページです。  
+👉 (https://koyou-design.github.io/HTML-CSS-/border_practice.html)
 
 
