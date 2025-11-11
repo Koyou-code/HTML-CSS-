@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="box" content="width=device-width, initial-scale=1.0">
+
+    <title>boxの練習</title>
+    <style>
+        body {
+            font-family: "游ゴシック体", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+                "メイリオ", Meiryo, sans-serif;
+            margin: 10px;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+
+        }
+
+        p {
+            font-size: 15px;
+            font-weight: bold;
+            line-height: 1.5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .main_1 {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+        }
+
+        .section {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .border_shadow_1,
+        .border_shadow_2,
+        .border_shadow_3,
+        .box,
+        .border_shadow_4,
+        .border_shadow_5,
+        .border_shadow_6,
+        .border_shadow_7,
+        .border_shadow_8,
+        .border_shadow_9,
+        .border_shadow_3_1,
+        .border_shadow_6_1,
+        .border_shadow_9_1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 120px;
+            background-color: antiquewhite;
+            padding: 20px;
+            border-radius: 5px;
+        }
+
+        .border_shadow_6_1 {
+            box-shadow: 0px 0px 10px 0px black;
+        }
+
+        .box {
+            padding: 25px;
+        }
+
+        .border_shadow_3_1 {
+            box-shadow: -10px -10px 0px 0px black;
+        }
+
+        .border_shadow_1 {
+            box-shadow: 0px 10px 0px 0px black;
+        }
+
+        .border_shadow_2 {
+            box-shadow: 10px 0px 0px 0px black;
+        }
+
+        .border_shadow_3 {
+            box-shadow: 10px 10px 0px 0px black;
+        }
+
+        .border_shadow_4 {
+            box-shadow: 10px 10px 10px 0px black;
+        }
+
+        .border_shadow_5 {
+            box-shadow: 10px 10px 0px 10px black;
+        }
+
+        .border_shadow_6 {
+            box-shadow: 10px 10px 10px 10px black;
+        }
+
+        .border_shadow_7 {
+            box-shadow: inset 10px 10px 0px 0px black;
+        }
+         .border_shadow_8 {
+            box-shadow: inset 10px 10px 10px 0px black;
+        }
+        .border_shadow_9 {
+            box-shadow: inset 0px 0px 10px 0px black;
+        }
+         .border_shadow_9_1{
+            box-shadow: inset -10px -10px 0px 0px black;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="main">
+        <h1>box-shadow | ボックスシャドウの練習</h1>
+        <div class="section">
+            <div class="main_1">
+
+                <div class="border_shadow_2">
+                    <p>box-shadow:<br> 10px 0px 0px 0px</p>
+                </div>
+                <div class="border_shadow_1">
+                    <p>box-shadow:<br> 0px 10px 0px 0px</p>
+                </div>
+                <div class="border_shadow_3">
+                    <p> box-shadow: <br>10px 10px 0px 0px</p>
+                </div>
+                <div class="border_shadow_3_1">
+                    <p> box-shadow: <br>-10px -10px 0px 0px</p>
+                </div>
+            </div>
+            <div class="main_1">
+                <div class="border_shadow_4">
+                    <p>box-shadow:<br> 10px 10px 10px 0px</p>
+                </div>
+                <div class="border_shadow_5">
+                    <p>box-shadow:<br> 10px 10px 0px 10px</p>
+                </div>
+                <div class="border_shadow_6">
+                    <p>box-shadow:<br> 10px 10px 10px 10px</p>
+                </div>
+                <div class="border_shadow_6_1">
+                    <p>box-shadow:<br> 0px 0px 0px 10px</p>
+                </div>
+            </div>
+            <div class="main_1">
+                <div class="border_shadow_7">
+                    <p>box-shadow: inset<br> 10px 10px 10px 0px</p>
+                </div>
+                <div class="border_shadow_8">
+                    <p>box-shadow: inset<br> 10px 10px 10px 10px</p>
+                </div>
+                <div class="border_shadow_9">
+                    <p>box-shadow: inset<br> 0px 0px 10px 0px</p>
+                </div>
+                <div class="border_shadow_9_1">
+                    <p>box-shadow: inset<br> -10px -10px 0px 0px</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
