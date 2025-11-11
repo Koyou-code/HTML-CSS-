@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="justifyの練習" content="width=device-width, initial-scale=1.0">
+    <title>justifyの練習</title>
+    <style>
+        body {
+            font-family: "游ゴシック体", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+                "メイリオ", Meiryo, sans-serif;
+            margin: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 20px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+
+        }
+
+        .left {
+            width: 120px;
+            /* 固定宽度 */
+            text-align: center;
+        }
+
+        .left p {
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 1.5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .section {
+            width: 650px;
+            height: 120px;
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            justify-content: center;
+            align-items: center;
+            background-color: floralwhite;
+
+        }
+
+        .box1,
+        .box2,
+        .box3 {
+            border-radius: 5px;
+            width: 80px;
+            height: 80px;
+            background-color: antiquewhite;
+        }
+
+        .box2 {
+            background-color: bisque;
+
+        }
+
+        .box3 {
+            background-color: cadetblue;
+
+        }
+
+
+        .right-start,
+        .right-center,
+        .right-end,
+        .right-space-between,
+        .right-space-around,
+        .right-space-evenly,
+        .right-space-evenly-1 {
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            width: 400px;
+            height: 100px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .right-space-evenly-1 {
+            border: none;
+            width: 420px;
+            height: 120px;
+
+        }
+
+        .right-space-around-1 {
+            border: none;
+            width: 420px;
+            height: 120px;
+        }
+
+        .right-end {
+            justify-content: end;
+
+        }
+
+        .right-center {
+            justify-content: center;
+        }
+
+        .right-space-between {
+            justify-content: space-between;
+        }
+
+        .right-space-around {
+            justify-content: space-around;
+        }
+
+        .right-space-evenly {
+            justify-content: space-evenly;
+        }
+        .main-left,
+        .main-right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>justify-content | レイアウト練習</h1>
+    <main class="main">
+        <div class="main-left">
+
+        <div class="section">
+            <div class="left">
+                <p>start</p>
+            </div>
+            <div class="right-start">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="left">
+                <p>center</p>
+            </div>
+            <div class="right-center">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="left">
+                <p>end</p>
+            </div>
+            <div class="right-end">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="left">
+                <p>space-between</p>
+            </div>
+            <div class="right-space-between">
+                <div class="box1"></div>
+                <div class="box2"></div>
+                <div class="box3"></div>
+            </div>
+        </div>
+        </div>
+        </div>
+
+        <div class="main-right">
+            <div class="section">
+                <div class="left">
+                    <p>space-evenly</p>
+                </div>
+                <div class="right-space-evenly">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                </div>
+
+            </div>
+             <div class="section">
+                <div class="left">
+                    <p>space-evenly</p>
+                </div>
+                <div class="right-space-evenly-1">
+                    <img src="img/evenly.png" alt="evenly" width="100%">
+                </div>
+            </div>
+
+
+
+
+            <div class="section">
+                <div class="left">
+                    <p>space-around</p>
+                </div>
+                <div class="right-space-around">
+                    <div class="box1"></div>
+                    <div class="box2"></div>
+                    <div class="box3"></div>
+                </div>
+            </div>
+
+
+            <div class="section">
+                <div class="left">
+                    <p>space-around</p>
+                </div>
+                <div class="right-space-around-1">
+                    <img src="img/around.png" alt="around" width="100%">
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
