@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="nth-childの練習" content="width=device-width, initial-scale=1.0">
+    <title>nth-childの練習</title>
+    <style>
+        body {
+            font-family: "游ゴシック体", "Yu Gothic", "Hiragino Kaku Gothic ProN",
+                "メイリオ", Meiryo, sans-serif;
+            margin: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            gap: 20px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+
+        }
+
+        .left {
+            width: 220px;
+            /* 固定宽度 */
+            text-align: center;
+        }
+
+        .left p {
+            font-size: 30px;
+            font-weight: bold;
+            line-height: 1.5;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .section {
+            width: 750px;
+            height: 110px;
+            display: flex;
+            flex-direction: row;
+            gap: 30px;
+            justify-content: center;
+            align-items: center;
+            background-color: floralwhite;
+        }
+
+        .box1,
+        .box2,
+        .box3,
+        .box4,
+        .box5,
+        .box6 {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            width: 50px;
+            height: 50px;
+            background-color: antiquewhite;
+        }
+
+        .box2 {
+            background-color: bisque;
+        }
+
+        .box3 {
+            background-color:navajowhite;
+        }
+
+        .box4 {
+            background-color: wheat;
+        }
+
+        .box5 {
+            background-color: burlywood;
+        }
+
+        .box6 {
+            background-color:darksalmon ;
+        }
+
+
+        .first-child,
+        .last-child,
+        .nth-child-2,
+        .nth-child-3,
+        .nth-chil-odd,
+        .nth-child-even
+        {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            width: 400px;
+            height: 80px;
+            border: 2px solid black;
+            border-radius: 10px;
+            background-color: white;
+        }
+
+        .first-child p,
+        .last-child p,
+        .nth-child-2 p,
+        .nth-child-3 p,
+        .nth-chil-odd p,
+        .nth-child-even p
+        {
+            font-size: 25px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+
+
+        .first-child> :first-child,
+        .last-child> :last-child,
+        .nth-child-2> :nth-child(2),
+        .nth-chil-odd> :nth-child(odd),
+        .nth-child-3> :nth-child(3),
+        .nth-child-even> :nth-child(even)
+        {
+            border: 5px solid rgb(5, 0, 154);
+        }
+
+
+
+
+
+        .main-left,
+        .main-right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <main class="main">
+        <h1>nth-child | 子要素セレクタ</h1>
+        <div class="section">
+            <div class="left">
+                <p>first-child</p>
+            </div>
+            <div class="first-child">
+                <div class="box1"><p>1</p></div>
+                <div class="box2"><p>2</p></div>
+                <div class="box3"><p>3</p></div>
+                <div class="box4"><p>4</p></div>
+                <div class="box5"><p>5</p></div>
+                <div class="box6"><p>6</p></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="left">
+                <p>last-child</p>
+            </div>
+            <div class="last-child">
+                <div class="box1"><p>1</p></div>
+                <div class="box2"><p>2</p></div>
+                <div class="box3"><p>3</p></div>
+                <div class="box4"><p>4</p></div>
+                <div class="box5"><p>5</p></div>
+                <div class="box6"><p>6</p></div>
+            </div>
+        </div>
+
+         <div class="section">
+            <div class="left">
+                <p>nth-child(2)</p>
+            </div>
+            <div class="nth-child-2">
+                <div class="box1"><p>1</p></div>
+                <div class="box2"><p>2</p></div>
+                <div class="box3"><p>3</p></div>
+                <div class="box4"><p>4</p></div>
+                <div class="box5"><p>5</p></div>
+                <div class="box6"><p>6</p></div>
+            </div>
+        </div>
+
+         <!-- <div class="section">
+            <div class="left">
+                <p>nth-child(3)</p>
+            </div>
+            <div class="nth-child-3">
+                <div class="box1"><p>1</p></div>
+                <div class="box2"><p>2</p></div>
+                <div class="box3"><p>3</p></div>
+                <div class="box4"><p>4</p></div>
+                <div class="box5"><p>5</p></div>
+                <div class="box6"><p>6</p></div>
+            </div>
+        </div> -->
+
+        <div class="section">
+            <div class="left">
+                <p>nth-child(odd)</p>
+            </div>
+            <div class="nth-chil-odd">
+                <div class="box1"><p>1</p></div>
+                <div class="box2"><p>2</p></div>
+                <div class="box3"><p>3</p></div>
+                <div class="box4"><p>4</p></div>
+                <div class="box5"><p>5</p></div>
+                <div class="box6"><p>6</p></div>
+            </div>
+        </div>
+
+        <div class="section">
+            <div class="left">
+                <p>nth-child(even)</p>
+            </div>
+            <div class="nth-child-even">
+                <div class="box1"><p>1</p></div>
+                <div class="box2"><p>2</p></div>
+                <div class="box3"><p>3</p></div>
+                <div class="box4"><p>4</p></div>
+                <div class="box5"><p>5</p></div>
+                <div class="box6"><p>6</p></div>
+            </div>
+        </div>
+
+    </main>
+
+</body>
+
+</html>
