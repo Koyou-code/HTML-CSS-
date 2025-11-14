@@ -12,7 +12,7 @@
 
 子要素セレクタ・<strong>Nth-child</strong> Practice 👉https://koyou-design.github.io/HTML-CSS-/nth-child_practice.html<br>
 
-
+グラデーション・<strong>Gradient</strong> Practice 👉https://koyou-design.github.io/HTML-CSS-/gradient_practice.html<br>
 
 
 
