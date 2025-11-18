@@ -9,6 +9,8 @@
 スシャドウ・<strong>Box-shadow</strong> Practice 👉https://koyou-design.github.io/HTML-CSS-/box-shadow_practice.html<br>
 子要素セレクタ・<strong>Nth-child</strong> Practice 👉https://koyou-design.github.io/HTML-CSS-/nth-child_practice.html<br>
 グラデーション・<strong>Gradient</strong> Practice 👉https://koyou-design.github.io/HTML-CSS-/gradient_practice.html<br>
+文字装飾・<strong>text-decoration</strong> Practice 👉https://koyou-design.github.io/HTML-CSS-/text_practice.html<br>
+
 
 
 
